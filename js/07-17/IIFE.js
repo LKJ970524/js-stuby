@@ -27,4 +27,4 @@ double();
   console.log(a.innerWidth);
   console.log(b.body);
 })(window, document) //todo 두번쨰 소괄호로 들어가는 각각의 데이터를 즉시실행 함수에 매게변수로 적용가능하다.
-
+//? 코드의 난독화를 위해 사용된다.
