@@ -56,9 +56,9 @@ console.log(el.closest('.hello'));
 */
 
 
-//N.previousSibling / N.nextSibling
+// N.previousSibling / N.nextSibling
 
-//노드의 이전 형제 혹은 다음형제 노드를 반환합니다. (노드에서만 사용한다.)
+// 노드의 이전 형제 혹은 다음형제 노드를 반환한다. (노드에서만 사용한다.)
 /*
 const el = document.querySelector('.child')
 console.log(el.previousSibling);
@@ -66,10 +66,32 @@ console.log(el.nextSibling);
 */
 //-------------------------------------------------------------------
 
-//N.previousElementSibling / N.nextElementSibling
+// N.previousElementSibling / N.nextElementSibling
 
-//노드의 이전 형제 혹은 다음형제 노드를 반환합니다. (노드에서만 사용한다.)
+// 요소의 이전 형제 혹은 다음형제 요소를 반환한다.
 
-const el = document.querySelector('.child')
-console.log(el.previousElementSibling);
-console.log(el.nextElementSibling);
+// const el = document.querySelector('.child')
+// console.log(el.previousElementSibling);
+// console.log(el.nextElementSibling);
+
+//---------------------------------------------------------------
+
+// E.children
+
+// 요소의 모든 자식 요소를 반환한다.
+/*
+const el = document.querySelector('.parent')
+
+console.log(el.children);
+
+console.log(Array.from(el.children));
+*/
+//-------------------------------------------------------------------
+
+// E.firstElementChild / E.lastElementChild
+
+// 요소의 첫번째 자식 혹은 마지막 자식 요소를 반환한다.
+
+const el = document.querySelector('.parent')
+console.log(el.firstElementChild);
+console.log(el.lastElementChild);
