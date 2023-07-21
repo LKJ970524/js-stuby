@@ -46,7 +46,8 @@ console.log(el.parentElement);
 
 // 자신을 포함한 조상 요소중 'CSS 선택자'와 일치하는,
 // 가장 가까운 요소를 반환한다.
-// 요소를 찾지 못하며느 `null`을 반환한다.
+// 요소를 찾지 못하면 `null`을 반환한다.
+//? 타겟이 이미지인데 우리는 li 가 필요하니까 이미지를 이용해서 li 를 잡아오기 위해서 이미지의 가장 가까운 부모요소인 li를 찾아오라는 closest('li') 를 작성해서
 /*
 const el = document.querySelector('.child')
 
