@@ -10,10 +10,10 @@ const getMovies = movieName => {
 
 const titles = ['frozen','avatar','avengers']
 
-titles.forEach(async title => {
-  const movies = await getMovies(title)
-  console.log(title, movies);
-}) //! 배열이 랜덤하게 배출된다!
+// titles.forEach(async title => {
+//   const movies = await getMovies(title)
+//   console.log(title, movies);
+// }) //! 배열이 랜덤하게 배출된다!
 
 const wrap = async ()=> {
   for (const title of titles){
